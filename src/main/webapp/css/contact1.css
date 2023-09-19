@@ -1,0 +1,15 @@
+body {    
+  background: #868d9b;
+ }
+ 
+ 
+ input[type=text] {
+  width: 30%;
+  padding: 2px 4px;
+  box-sizing: border-box;
+  margin-bottom: 2%;
+}
+ 
+ #formRequest {
+ 	text-align: center;
+ }

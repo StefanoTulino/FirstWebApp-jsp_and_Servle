@@ -1,0 +1,72 @@
+/*Stile per la navBar che viene applicato a qualunque tipo di text*/
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');  
+ * {  
+  box-sizing: border-box;  
+  padding: 0;  
+  margin: 10px;  
+  font-family: 'Mochiy Pop One', sans-serif;  
+ }  
+ 
+ body {    
+  background: #252839;
+ } 
+ 
+ .navbar{
+ 	display:flex;
+	background-color: gray;
+	padding: 0px;
+	}
+
+ .navbar-logo {
+ 	color: white;
+ 	margin-left: 2%;
+ }
+
+ /* COSI E MODIFICANDO ul li a lo faccio centrale
+ body {  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  min-height: 100vh;  
+  background: #252839;  
+ }   */
+ 
+ 
+ .listNavbar {  
+  position: relative;
+  display: flex;   
+  align-items: flex-start;
+  margin-top:2%;
+  flex-direction: row;  
+  gap: 30px;  
+ }  
+ .listNavbar li {  
+  position: relative;  
+  list-style: none;  
+ }  
+ .listNavbar li a {  
+  /* è enorme
+  font-size: 4em; */  
+
+  text-decoration: none;  
+  letter-spacing: 2px;  
+  line-height: 1em;  
+  text-transform: uppercase;  
+  color: transparent;  
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5); 
+   
+ }  
+ ul li a::before {  
+  content: attr(data-text);  
+  position: absolute;  
+  color: var(--clr);  
+  width: 0;  
+  overflow: hidden;  
+  transition: 1s;  
+  border-right: 8px solid var(--clr);  
+  -webkit-text-stroke: 1px var(--clr);  
+ }  
+ ul li a:hover::before {  
+  width: 100%;  
+  filter: drop-shadow(0 0 25px var(--clr))  
+ }  

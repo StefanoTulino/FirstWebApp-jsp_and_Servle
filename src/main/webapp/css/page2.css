@@ -1,0 +1,57 @@
+/*Colora la prima riga di un paragrafo in questo caso */
+#p1:first-line {
+	color: red;
+}
+
+#p2:after {
+	/* content: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Friedrich-Johann-Justin-Bertuch_Mythical-Creature-Dragon_1806.jpg/640px-Friedrich-Johann-Justin-Bertuch_Mythical-Creature-Dragon_1806.jpg"); */
+ 	content: "- Ciao";
+ }
+
+/*NON FUNZIONA, BHO
+#p2::before {
+	text-decoration: overline;
+}*/
+
+
+/* Alla selezione di un oggetto, esso avrà come background-color giallo. Sulla lista non va bene */
+#ol1::selection {
+	background-color: yellow;
+}
+
+#p3:first-letter {
+	color: red;
+	font-size: 24px;
+}
+
+
+
+/* --------------------------FLEXBOX-------------------------  */
+
+/* ALLINEA AL CENTRO IN MANIERA ORIZZONTALE */
+#img1 {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+
+/* ALLINEA AL CENTRO IN MANIERA VERTICALE */
+#img2 {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+}
+
+
+/* ALLINEA AL CENTRO IN MANIERA VERTICALE ED ORIZZONTALE */
+#img3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
